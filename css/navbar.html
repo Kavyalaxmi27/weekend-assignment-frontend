@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Navbar</title>
+
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f4f4f4;
+    }
+
+    /* Navbar */
+    header {
+      background: #222;
+      color: #fff;
+      padding: 1rem;
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    /* Navigation */
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+
+    nav ul li {
+      position: relative;
+    }
+
+    nav ul li a {
+      padding: 0.75rem 1rem;
+      text-decoration: none;
+      color: #fff;
+      display: block;
+      transition: background 0.3s;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      background: #ff9800;
+    }
+
+    /* Dropdown */
+    nav ul li ul {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #333;
+      display: none;
+      flex-direction: column;
+      min-width: 150px;
+    }
+
+    nav ul li:hover ul {
+      display: block;
+    }
+
+    nav ul li ul li a {
+      padding: 0.75rem;
+    }
+
+    /* Hamburger */
+    #menu-toggle {
+      display: none;
+    }
+
+    .hamburger {
+      display: none;
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+
+    /* Mobile Styles */
+    @media (max-width: 768px) {
+      .hamburger {
+        display: block;
+      }
+
+      nav {
+        position: fixed;
+        top: 0;
+        right: -250px;
+        width: 250px;
+        height: 100%;
+        background: #222;
+        transition: right 0.4s ease;
+        padding-top: 4rem;
+      }
+
+      nav ul {
+        flex-direction: column;
+      }
+
+      nav ul li ul {
+        position: static;
+        display: none;
+      }
+
+      nav ul li:hover ul {
+        display: none;
+      }
+
+      nav ul li input:checked + ul {
+        display: block;
+      }
+
+      #menu-toggle:checked ~ nav {
+        right: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav-container">
+    <div class="logo">MySite</div>
+
+    <label for="menu-toggle" class="hamburger">☰</label>
+    <input type="checkbox" id="menu-toggle" />
+
+    <nav>
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li>
+          <a href="#">Services</a>
+          <ul>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Development</a></li>
+          </ul>
+        </li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+</body>
+</html>
