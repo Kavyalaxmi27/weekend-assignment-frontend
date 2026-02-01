@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registration Form</title>
+</head>
+
+<body>
+
+  <header>
+    <h1>User Registration</h1>
+  </header>
+
+  <main>
+    <form>
+
+      <!-- Email -->
+      <section>
+        <label for="email">Email Address</label><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="example@email.com"
+          required
+          aria-label="Email address"
+        />
+      </section>
+
+      <br />
+
+      <!-- Password -->
+      <section>
+        <label for="password">Password</label><br />
+        <input
+          type="password"
+          id="password"
+          name="password"
+          minlength="6"
+          required
+          aria-label="Password"
+        />
+      </section>
+
+      <br />
+
+      <!-- Confirm Password -->
+      <section>
+        <label for="confirmPassword">Confirm Password</label><br />
+        <input
+          type="password"
+          id="confirmPassword"
+          name="confirmPassword"
+          required
+          aria-label="Confirm password"
+        />
+      </section>
+
+      <br />
+
+      <!-- Phone -->
+      <section>
+        <label for="phone">Phone Number</label><br />
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          pattern="[0-9]{10}"
+          placeholder="10-digit number"
+          required
+          aria-describedby="phoneHelp"
+        />
+        <small id="phoneHelp">Enter a valid 10-digit phone number</small>
+      </section>
+
+      <br />
+
+      <!-- Date of Birth -->
+      <section>
+        <label for="dob">Date of Birth</label><br />
+        <input
+          type="date"
+          id="dob"
+          name="dob"
+          required
+        />
+      </section>
+
+      <br />
+
+      <!-- Terms and Conditions -->
+      <section>
+        <input
+          type="checkbox"
+          id="terms"
+          name="terms"
+          required
+        />
+        <label for="terms">
+          I agree to the Terms and Conditions
+        </label>
+      </section>
+
+      <br />
+
+      <!-- Submit -->
+      <section>
+        <button type="submit">Register</button>
+      </section>
+
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Registration Portal</p>
+  </footer>
+
+</body>
+</html>

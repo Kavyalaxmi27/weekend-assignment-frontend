@@ -1,0 +1,35 @@
+Semantic HTML5 Elements
+
+Semantic HTML5 elements are HTML tags that clearly describe the meaning and purpose of the content they contain. Unlike generic elements such as <div> and <span>, semantic elements provide meaningful structure to a webpage. This helps browsers, search engines, developers, and assistive technologies understand the content better.
+
+Using semantic HTML improves accessibility, search engine optimization (SEO), and code readability, making applications easier to maintain and scale.
+
+Common Semantic HTML5 Elements
+
+<header>
+The <header> element represents introductory content for a page or section. It typically contains the site logo, title, headings, or navigation links. A page can have multiple headers, but each should relate to its surrounding content.
+
+<nav>
+The <nav> element is used to define a block of navigation links. It usually contains menus, links to different pages, or internal section links. Screen readers use this element to identify navigation areas easily.
+
+<main>
+The <main> element represents the primary content of the document. It should be unique and must not be repeated on the same page. This helps assistive technologies quickly locate the main content.
+
+<article>
+The <article> element is used for independent, self-contained content such as blog posts, news articles, or forum posts. Content inside an article should make sense even if it is viewed separately.
+
+<section>
+The <section> element groups related content under a common theme. It usually includes a heading and is used to organize content logically within a page or article.
+
+<aside>
+The <aside> element contains content that is indirectly related to the main content, such as sidebars, related links, advertisements, or author information.
+
+<footer>
+The <footer> element represents the footer of a page or section. It commonly includes copyright information, social media links, author details, or related documents.
+
+<figure> and <figcaption>
+The <figure> element is used to group visual content such as images, diagrams, or charts. The <figcaption> provides a descriptive caption for the content inside the figure, improving accessibility and clarity.
+
+Interview-Ready Summary
+
+Semantic HTML5 elements provide meaningful structure to web pages. They improve accessibility for screen readers, enhance SEO, and make code more readable and maintainable. Using semantic tags is a best practice in modern web development and is preferred over excessive use of generic <div> elements.
